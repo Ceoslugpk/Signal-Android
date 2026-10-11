@@ -1,0 +1,160 @@
+Downloading https://services.gradle.org/distributions/gradle-8.13-all.zip
+......................10%......................20%......................30%......................40%......................50%......................60%......................70%.......................80%......................90%......................100%
+
+Welcome to Gradle 8.13!
+
+Here are the highlights of this release:
+ - Daemon JVM auto-provisioning
+ - Enhancements for Scala plugin and JUnit testing
+ - Improvements for build authors and plugin developers
+
+For more details see https://docs.gradle.org/8.13/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+Calculating task graph as no cached configuration is available for tasks: lintDebug
+
+> Configure project :build-logic:plugins
+WARNING: Unsupported Kotlin plugin version.
+The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.0.21` that might work differently than in the requested version `2.2.20`.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring root project 'Signal'.
+> Could not resolve all artifacts for configuration 'classpath'.
+   > Could not resolve com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:2.2.20-2.0.2.
+     Required by:
+         root project :
+      > Could not resolve com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:2.2.20-2.0.2.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/com/google/devtools/ksp/com.google.devtools.ksp.gradle.plugin/2.2.20-2.0.2/com.google.devtools.ksp.gradle.plugin-2.2.20-2.0.2.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/com/google/devtools/ksp/com.google.devtools.ksp.gradle.plugin/2.2.20-2.0.2/com.google.devtools.ksp.gradle.plugin-2.2.20-2.0.2.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:2.2.20-2.0.2.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/com/google/devtools/ksp/com.google.devtools.ksp.gradle.plugin/2.2.20-2.0.2/com.google.devtools.ksp.gradle.plugin-2.2.20-2.0.2.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/com/google/devtools/ksp/com.google.devtools.ksp.gradle.plugin/2.2.20-2.0.2/com.google.devtools.ksp.gradle.plugin-2.2.20-2.0.2.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:2.2.20-2.0.2.
+         > Could not get resource 'https://plugins.gradle.org/m2/com/google/devtools/ksp/com.google.devtools.ksp.gradle.plugin/2.2.20-2.0.2/com.google.devtools.ksp.gradle.plugin-2.2.20-2.0.2.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/com/google/devtools/ksp/com.google.devtools.ksp.gradle.plugin/2.2.20-2.0.2/com.google.devtools.ksp.gradle.plugin-2.2.20-2.0.2.pom'. Received status code 429 from server: Too Many Requests
+   > Could not resolve org.apache.httpcomponents:httpmime:4.5.6.
+     Required by:
+         root project : > com.android.tools.build:gradle:8.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools:sdklib:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.analytics-library:crash:31.13.2
+      > Could not resolve org.apache.httpcomponents:httpmime:4.5.6.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve org.apache.httpcomponents:httpmime:4.5.6.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve org.apache.httpcomponents:httpmime:4.5.6.
+         > Could not get resource 'https://plugins.gradle.org/m2/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom'. Received status code 429 from server: Too Many Requests
+   > Could not resolve commons-io:commons-io:2.16.1.
+     Required by:
+         root project : > com.android.tools.build:gradle:8.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > androidx.databinding:databinding-compiler-common:8.13.2
+      > Could not resolve commons-io:commons-io:2.16.1.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve commons-io:commons-io:2.16.1.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve commons-io:commons-io:2.16.1.
+         > Could not get resource 'https://plugins.gradle.org/m2/commons-io/commons-io/2.16.1/commons-io-2.16.1.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.pom'. Received status code 429 from server: Too Many Requests
+   > Could not resolve org.ow2.asm:asm:9.8.
+     Required by:
+         root project : > com.android.tools.build:gradle:8.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.lint:lint-typedef-remover:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > org.ow2.asm:asm-commons:9.8
+         root project : > com.android.tools.build:gradle:8.13.2 > org.ow2.asm:asm-util:9.8
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.build:gradle-api:8.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > org.ow2.asm:asm-commons:9.8 > org.ow2.asm:asm-tree:9.8
+      > Could not resolve org.ow2.asm:asm:9.8.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve org.ow2.asm:asm:9.8.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve org.ow2.asm:asm:9.8.
+         > Could not get resource 'https://plugins.gradle.org/m2/org/ow2/asm/asm/9.8/asm-9.8.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom'. Received status code 429 from server: Too Many Requests
+   > Could not resolve org.ow2.asm:asm-analysis:9.8.
+     Required by:
+         root project : > com.android.tools.build:gradle:8.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > org.ow2.asm:asm-util:9.8
+      > Could not resolve org.ow2.asm:asm-analysis:9.8.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve org.ow2.asm:asm-analysis:9.8.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve org.ow2.asm:asm-analysis:9.8.
+         > Could not get resource 'https://plugins.gradle.org/m2/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.pom'. Received status code 429 from server: Too Many Requests
+   > Could not resolve com.google.protobuf:protobuf-java:3.25.5.
+     Required by:
+         root project : > com.android.tools.build:gradle:8.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools:sdk-common:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.ddms:ddmlib:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.build:aapt2-proto:8.13.2-14304508
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.build:aaptcompiler:8.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-device-provider-ddmlib-proto:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-device-provider-profile-proto:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-test-plugin-host-additional-test-output-proto:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-test-plugin-host-coverage-proto:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-test-plugin-host-emulator-control-proto:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-test-plugin-host-logcat-proto:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-test-plugin-host-apk-installer-proto:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-test-plugin-result-listener-gradle-proto:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.analytics-library:shared:31.13.2 > com.android.tools.analytics-library:protos:31.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.build:builder:8.13.2 > com.android.tools.analytics-library:tracker:31.13.2
+      > Could not resolve com.google.protobuf:protobuf-java:3.25.5.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-java/3.25.5/protobuf-java-3.25.5.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-java/3.25.5/protobuf-java-3.25.5.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve com.google.protobuf:protobuf-java:3.25.5.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-java/3.25.5/protobuf-java-3.25.5.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-java/3.25.5/protobuf-java-3.25.5.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve com.google.protobuf:protobuf-java:3.25.5.
+         > Could not get resource 'https://plugins.gradle.org/m2/com/google/protobuf/protobuf-java/3.25.5/protobuf-java-3.25.5.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-java/3.25.5/protobuf-java-3.25.5.pom'. Received status code 429 from server: Too Many Requests
+   > Could not resolve com.google.protobuf:protobuf-java-util:3.25.5.
+     Required by:
+         root project : > com.android.tools.build:gradle:8.13.2
+      > Could not resolve com.google.protobuf:protobuf-java-util:3.25.5.
+         > Could not parse POM https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-java-util/3.25.5/protobuf-java-util-3.25.5.pom
+            > Could not resolve com.google.protobuf:protobuf-parent:3.25.5.
+               > Could not resolve com.google.protobuf:protobuf-parent:3.25.5.
+                  > Could not parse POM https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-parent/3.25.5/protobuf-parent-3.25.5.pom
+                     > Could not resolve com.google.protobuf:protobuf-bom:3.25.5.
+                        > Could not resolve com.google.protobuf:protobuf-bom:3.25.5.
+                           > Could not get resource 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-bom/3.25.5/protobuf-bom-3.25.5.pom'.
+                              > Could not GET 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-bom/3.25.5/protobuf-bom-3.25.5.pom'. Received status code 429 from server: Too Many Requests
+                        > Could not resolve com.google.protobuf:protobuf-bom:3.25.5.
+                           > Could not get resource 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-bom/3.25.5/protobuf-bom-3.25.5.pom'.
+                              > Could not GET 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-bom/3.25.5/protobuf-bom-3.25.5.pom'. Received status code 429 from server: Too Many Requests
+                        > Could not resolve com.google.protobuf:protobuf-bom:3.25.5.
+                           > Could not get resource 'https://plugins.gradle.org/m2/com/google/protobuf/protobuf-bom/3.25.5/protobuf-bom-3.25.5.pom'.
+                              > Could not GET 'https://repo.maven.apache.org/maven2/com/google/protobuf/protobuf-bom/3.25.5/protobuf-bom-3.25.5.pom'. Received status code 429 from server: Too Many Requests
+   > Could not resolve io.grpc:grpc-protobuf:1.69.1.
+     Required by:
+         root project : > com.android.tools.build:gradle:8.13.2
+         root project : > com.android.tools.build:gradle:8.13.2 > com.android.tools.utp:android-test-plugin-result-listener-gradle-proto:31.13.2
+      > Could not resolve io.grpc:grpc-protobuf:1.69.1.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/io/grpc/grpc-protobuf/1.69.1/grpc-protobuf-1.69.1.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/io/grpc/grpc-protobuf/1.69.1/grpc-protobuf-1.69.1.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve io.grpc:grpc-protobuf:1.69.1.
+         > Could not get resource 'https://repo.maven.apache.org/maven2/io/grpc/grpc-protobuf/1.69.1/grpc-protobuf-1.69.1.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/io/grpc/grpc-protobuf/1.69.1/grpc-protobuf-1.69.1.pom'. Received status code 429 from server: Too Many Requests
+      > Could not resolve io.grpc:grpc-protobuf:1.69.1.
+         > Could not get resource 'https://plugins.gradle.org/m2/io/grpc/grpc-protobuf/1.69.1/grpc-protobuf-1.69.1.pom'.
+            > Could not GET 'https://repo.maven.apache.org/maven2/io/grpc/grpc-protobuf/1.69.1/grpc-protobuf-1.69.1.pom'. Received status code 429 from server: Too Many Requests
+> There are 63 more failures with identical causes.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5m 17s
+Configuration cache entry stored.
